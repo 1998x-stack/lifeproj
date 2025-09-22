@@ -1,0 +1,79 @@
+# Conway's Game of Life 典型结构库
+# 参考：LifeWiki / Golly RLE（示例 RLE 选取常见相位）
+categories:
+  still_life:
+    - name: Block
+      period: 1
+      rle: |
+        x = 2, y = 2, rule = B3/S23
+        2o$2o!
+      notes: "2x2 方块"
+    - name: Beehive
+      period: 1
+      rle: |
+        x = 4, y = 3, rule = B3/S23
+        bo2b$o2bo$bo2b!
+      notes: "蜂窝"
+
+  oscillator:
+    - name: Blinker
+      period: 2
+      rle: |
+        x = 3, y = 1, rule = B3/S23
+        3o!
+    - name: Toad
+      period: 2
+      rle: |
+        x = 4, y = 2, rule = B3/S23
+        b3o$3ob!
+    - name: Beacon
+      period: 2
+      rle: |
+        x = 4, y = 4, rule = B3/S23
+        2o2b$2o2b$2b2o$2b2o!
+
+  spaceship:
+    - name: Glider
+      period: 4
+      speed: "c/4 diag"
+      rle: |
+        x = 3, y = 3, rule = B3/S23
+        bo$2bo$3o!
+    - name: LWSS
+      period: 4
+      speed: "c/2 ortho"
+      rle: |
+        x = 5, y = 4, rule = B3/S23
+        bo2bo$o4b$o3bo$4ob!
+
+  gun:
+    - name: Gosper Glider Gun
+      period: 30
+      rle: |
+        x = 36, y = 9, rule = B3/S23
+        24bo$22bobo$12b2o6b2o12b2o$11bo3bo4b2o12b2o$2o8bo5bo3b2o$2o8bo3bob2o4bobo$10bo5bo7bo$11bo3bo$12b2o!
+
+  puffer_rake:
+    - name: Switch Engine (block-laying)
+      period: 48
+      rle: |
+        x = 21, y = 21, rule = B3/S23
+        6bo$5bobo$5bobo$6bo2$2o$2o6$18b2o$18b2o2$9bo$8bobo$8bobo$9bo!
+
+  methuselah:
+    - name: R-pentomino
+      rle: |
+        x = 3, y = 3, rule = B3/S23
+        b2o$2ob$bob!
+    - name: Acorn
+      rle: |
+        x = 7, y = 3, rule = B3/S23
+        bo5b$3bo3b$2o2b3o!
+
+  breeder:
+    - name: breeder_sample
+      rle: |
+        # 这里放一个示意占位（真实繁殖者很大，建议外部文件）
+        x = 3, y = 3, rule = B3/S23
+        o$o$o!
+      notes: "示意；请替换为真实大结构 RLE"
