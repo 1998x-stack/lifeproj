@@ -34,4 +34,3 @@ class LifeRule:
 
 # 默认规则
 DEFAULT_RULE = LifeRule.parse("B3/S23")
-print(DEFAULT_RULE)

@@ -3,7 +3,7 @@ import argparse
 import os
 from typing import Optional, Tuple, Iterable
 from .rules import LifeRule, DEFAULT_RULE
-from .factory import create_engine
+from .engine_builder import create_engine
 from .io import yaml_patterns, rle as rle_io, video as video_io
 from .utils.render import to_array
 

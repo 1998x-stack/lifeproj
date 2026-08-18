@@ -1,0 +1,7 @@
+engine: sparse
+rule: B3/S23
+rle_text: "bo$2bo$3o!"
+steps: 10
+every: 1
+gif: false
+save_rle: false
